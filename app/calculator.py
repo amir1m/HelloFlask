@@ -6,3 +6,10 @@ class Calculator(object):
         else:
             raise ValueError
             
+    def subtract(self, x,y):
+        number_types = (int, long, float, complex)
+        if isinstance(x, number_types) and isinstance(y, number_types):
+            return x-y
+        else:
+            raise ValueError
+                    

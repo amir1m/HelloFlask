@@ -9,7 +9,7 @@ class TestHelloServer(unittest.TestCase):
         self.last_name = "mukeri"
         self.msg = "Hello World"
     def test_hello(self):
-        test_url = self.base_url + '/amir/mukeri'
+        test_url = self.base_url + '/self.first_name/self.last_name'
         req = Request(test_url)
         res = urlopen(req)
         self.assertEqual(res.code, 200)
