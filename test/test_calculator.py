@@ -19,5 +19,12 @@ class TDDPythonExample(unittest.TestCase):
     def test_calculator_subtract_error_message_if_both_args_are_not_numbers(self):
         self.assertRaises(ValueError,self.calc.subtract, 'one', 'two')
 
+    def test_calculator_multiply_method_returns_correct_value(self):
+        result = self.calc.multiply(4,2)
+        self.assertEqual(8, result)
+    
+    def test_calculator_multiply_error_message_if_both_args_are_not_numbers(self):
+        self.assertRaises(ValueError,self.calc.multiply, 'one', 'two')
+
 if __name__ == '__main__':
     unittest.main()
